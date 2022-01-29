@@ -39,7 +39,7 @@ public class Publication {
 
     @Override
     public String toString() {
-        return title + ", " + publisher + ", " + year;
+        return title + "; " + publisher + "; " + year;
     }
 
     @Override
