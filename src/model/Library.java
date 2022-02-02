@@ -16,14 +16,6 @@ public class Library implements Serializable {
         return result;
     }
 
-    public void addBook(Book book) {
-        addPublication(book);
-    }
-
-    public void addMagazine(Magazine magazine) {
-        addPublication(magazine);
-    }
-
     public void addPublication(Publication publication) {
         if (publicationsNumber >= MAX_PUBLICATIONS) {
             throw new ArrayIndexOutOfBoundsException("Max publications exceeded " + MAX_PUBLICATIONS);
