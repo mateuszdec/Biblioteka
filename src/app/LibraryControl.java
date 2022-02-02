@@ -71,9 +71,9 @@ public class LibraryControl {
                 option = Option.createFromInt(dataReader.getInt());
                 optionOk = true;
             } catch (NoSuchOptionException e) {
-                printer.printLine(e.getMessage());
-            } catch (InputMismatchException e) {
-                printer.printLine("Wprowadzono wartość, która nie jest liczbą, podaj ponownie");
+                printer.printLine(e.getMessage() + ", podaj ponownie:");
+            } catch (InputMismatchException ignored) {
+                printer.printLine("Wprowadzono wartość, która nie jest liczbą, podaj ponownie:");
             }
         }
         return option;
